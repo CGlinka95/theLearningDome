@@ -15,3 +15,25 @@ rojo serve
 ```
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
+
+## Tool Object Events
+
+```lua
+local Tool = script.Parent
+
+Tool.Activated:Connect(function()
+    print("You clicked me")
+end)
+
+Tool.Deactivated:Connect(function ()
+    print("You deactivated me")
+end)
+
+Tool.Equipped:Connect(function ()
+    print("You equipped me")
+end)
+
+Tool.Unequipped:Connect(function ()
+    print("You uneqipped me")
+end)
+``` 
